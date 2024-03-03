@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+// tailwind.config.js
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -7,14 +9,14 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'black': '#000000',
-      'midnight': '#14213d',
-      'yellow': '#fca311',
-      'gray': '#e5e5e5',
+      'black': '#000814',
+      'marigold': '#ffc300',
+      'yellow': '#ffd60a',
+      'gray': '#d3d3d3',
       'white': '#ffffff',
+    },
     extend: {},
   },
-},
   plugins: [],
-}
+};
 
