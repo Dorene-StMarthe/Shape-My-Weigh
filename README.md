@@ -18,10 +18,12 @@ Creating a Workout Plan:
 1. Select exercises from the prepopulated list.
 Customize sets, reps, and rest intervals according to your preferences.
 Save your plan for easy access during your workout sessions.
+
 Viewing and Managing Workouts:
 
 2. Access your workout plans from the main menu.
 Track your completed workouts and monitor your progress over time.
+
 Editing or Deleting Workouts:
 
 3. Make adjustments to your workout plans as needed.
