@@ -11,7 +11,7 @@ module.exports = {
       current: 'currentColor',
       'black': '#000814',
       'marigold': '#ffc300',
-      'yellow': '#ffd60a',
+      'yellow': '#fffbeb',
       'gray': '#d3d3d3',
       'white': '#ffffff',
     },
