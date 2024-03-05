@@ -7,14 +7,30 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="text-white">
             <h1 className="text-6xl belanosima-semibold mb-4">Transform your body Transform your life</h1>
-            <a href="#" className="text-lg text-white belanosima-regular mt-4 inline-block hover:underline">Learn More</a>
+            <div className="mt-4 flex items-center">
+            <a href="#" className="bg-white text-black text-lg font-semibold inline-block mr-4 py-3 px-4 rounded-lg flex items-center">
+            <span className="mr-2 text-sm">Download on the</span>
+                <img src="./apple-logo.png" alt="Apple Logo" className="h-6 mr-2" />
+                App Store
+              </a>
+              <a href="#" className="bg-white text-black text-lg font-semibold inline-block py-3 px-4 rounded-lg flex items-center">
+              <span className="text-sm">GET IT ON</span><br/>
+                <img src="./google-logo.png" alt="Google Logo" className="h-6 mr-2" />
+                Google Play
+              </a>
+            </div>
           </div>
-          <div className="flex justify-center items-center">
-            <img src="./hero-image.jpg" alt="Hero" className="w-full md:max-w-sm rounded-lg shadow-lg" />
+          <div className="flex justify-center items-center relative overflow-hidden">
+            
+          <div className="transform -skew-y-6">
+                <img src="./phone.png" alt="Mobile Phone" className="w-full md:max-w-sm rounded-lg shadow-lg" />
+              </div>
+              <div className="absolute top-0 left-0 w-full h-full "></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+   
   );
 };
 
