@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Login from '../pages/Login.js'
+
 const NavigationBar = () => {
   return (
     <nav className="bg-white p-4 flex justify-between items-center">
@@ -18,7 +20,7 @@ const NavigationBar = () => {
         </a>
       </div>
       <div>
-        <a href="#" className="text-lg relative mr-4 hover:text-midnight hover:font-bold transition-colors duration-300 ease-in-out">
+        <a href="/pages/Login" className="text-lg relative mr-4 hover:text-midnight hover:font-bold transition-colors duration-300 ease-in-out">
           Login
         </a>
         <a href="#" className="text-lg relative hover:text-midnight hover:font-bold transition-colors duration-300">
