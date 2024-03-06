@@ -28,3 +28,4 @@ Editing or Deleting Workouts:
 
 3. Make adjustments to your workout plans as needed.
 Delete workouts that no longer align with your fitness objectives.
+
