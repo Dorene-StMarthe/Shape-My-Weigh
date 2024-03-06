@@ -33,15 +33,15 @@ code {
 }
 
 .animate-hero {
-  animation: slide-up 1.5s ease-in-out;
+  animation: slide-up 1s ease-in-out;
 }
 
 .animate-hero-content {
-  animation: slide-up 1.5s ease-in-out 0.5s;
+  animation: slide-up 1.5s ease-in-out ;
 }
 
 .animate-hero-phone {
-  animation: slide-up 1.5s ease-in-out 1s;
+  animation: slide-up 2s ease-in-out;
 }
 
 .belanosima-regular {
