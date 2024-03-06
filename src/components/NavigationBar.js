@@ -8,13 +8,13 @@ const NavigationBar = () => {
       </div>
       <div className="flex justify-center items-center">
         <a href="#" className="text-lg relative mr-8 hover:text-midnight hover:font-bold transition-colors duration-300 ease-in-out">
-          About
+          Frequently Asked
         </a>
         <a href="#" className="text-lg relative mr-8 hover:text-midnight hover:font-bold transition-colors duration-300 ease-in-out">
-          Review
+          Reviews
         </a>
         <a href="#" className="text-lg relative mr-8 hover:text-midnight hover:font-bold transition-colors duration-300 ease-in-out">
-          Contact Us
+          Support
         </a>
       </div>
       <div>
@@ -22,7 +22,7 @@ const NavigationBar = () => {
           Login
         </a>
         <a href="#" className="text-lg relative hover:text-midnight hover:font-bold transition-colors duration-300">
-          Register
+          Sign up
         </a>
       </div>
     </nav>
