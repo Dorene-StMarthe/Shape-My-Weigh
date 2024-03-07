@@ -13,22 +13,19 @@ const NavigationBar = () => {
         
       </div>
       <div className="flex justify-center items-center">
-        <a href="#" className="text-lg relative mr-8 hover:text-midnight hover:font-bold transition-colors duration-300 ease-in-out">
+        <a href="/faq" className="text-lg relative mr-8 hover:text-midnight hover:font-bold transition-colors duration-300 ease-in-out">
           Frequently Asked
         </a>
-        <a href="#" className="text-lg relative mr-8 hover:text-midnight hover:font-bold transition-colors duration-300 ease-in-out">
+        <a href="/reviews" className="text-lg relative mr-8 hover:text-midnight hover:font-bold transition-colors duration-300 ease-in-out">
           Reviews
         </a>
-        <a href="#" className="text-lg relative mr-8 hover:text-midnight hover:font-bold transition-colors duration-300 ease-in-out">
+        <a href="/support" className="text-lg relative mr-8 hover:text-midnight hover:font-bold transition-colors duration-300 ease-in-out">
           Support
         </a>
       </div>
       <div>
         <a href="/login" className="text-lg relative mr-4 hover:text-midnight hover:font-bold transition-colors duration-300 ease-in-out">
           Login
-        </a>
-        <a href="#" className="text-lg relative hover:text-midnight hover:font-bold transition-colors duration-300">
-          Sign up
         </a>
       </div>
     </nav>
