@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Login = () => {
+  const [isLogin, setIsLogin] = useState(true);
+
+  const handleToggle = () => {
+    setIsLogin(!isLogin);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8">
-        <div>
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Shape My Weigh</h2>
-          <p className="mt-2 text-center text-sm text-gray-600">Log in to your account</p>
-        </div>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-md">
+        <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Shape My Weigh</h2>
+        <p className="mt-2 text-center text-sm text-gray-600">{isLogin ? 'Log in to your account' : 'Create an account'}</p>
         <form className="mt-8 space-y-6" action="#" method="POST">
           <input type="hidden" name="remember" value="true" />
           <div className="rounded-md shadow-sm -space-y-px">
@@ -17,8 +21,14 @@ const Login = () => {
             </div>
             <div>
               <label htmlFor="password" className="sr-only">Password</label>
-              <input id="password" name="password" type="password" autoComplete="current-password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password" />
+              <input id="password" name="password" type="password" autoComplete="current-password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm mt-2" placeholder="Password" />
             </div>
+            {!isLogin && (
+              <div>
+                <label htmlFor="confirm-password" className="sr-only">Confirm Password</label>
+                <input id="confirm-password" name="confirm-password" type="password" autoComplete="confirm-password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm mt-2" placeholder="Confirm Password" />
+              </div>
+            )}
           </div>
 
           <div className="flex items-center justify-between">
@@ -28,18 +38,15 @@ const Login = () => {
             </div>
 
             <div className="text-sm">
-              <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">Forgot your password?</a>
+              <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500" onClick={handleToggle}>
+                {isLogin ? 'Create an account' : 'Already have an account? Log in'}
+              </a>
             </div>
           </div>
 
           <div>
-            <button type="submit" className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-              <span className="absolute left-0 inset-y-0 flex items-center pl-3">
-                <svg className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fillRule="evenodd" d="M11 0H3a3 3 0 00-3 3v14a3 3 0 003 3h14a3 3 0 003-3V7l-4-4zm2 10h-1V7.5a.5.5 0 00-1 0V10H6V7.5a.5.5 0 00-1 0V10H3V3a1 1 0 011-1h7v3.5a.5.5 0 001 0V2h3a1 1 0 011 1v6zm-8.5 4a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm0-2a.5.5 0 01.5-.5h3a.5.5 0 010 1h-3a.5.5 0 01-.5-.5z" clipRule="evenodd" />
-                </svg>
-              </span>
-              Sign in
+            <button type="submit" className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-marigold hover:bg-yellow focus:outline focus:ring-2 focus:ring-offset-2 focus:ring-midnight mt-4">
+              {isLogin ? 'Sign in' : 'Create account'}
             </button>
           </div>
         </form>
@@ -49,3 +56,6 @@ const Login = () => {
 };
 
 export default Login;
+
+
+

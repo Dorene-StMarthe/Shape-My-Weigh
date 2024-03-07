@@ -12,10 +12,10 @@ function Homepage() {
   return (
     
     <div>
-        <NavigationBar/>
+        
         <Hero/>
         <Features/>
-        <Footer/>
+       
     </div>
   );
 }
