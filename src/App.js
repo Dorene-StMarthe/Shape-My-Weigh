@@ -6,6 +6,7 @@ import Login from './pages/Login'; // Verify the path to the Login component
 import './App.css'; // Verify the path to your CSS files
 import './index.css'; // Verify the path to your CSS files
 import ReviewPage from './pages/ReviewPage';
+import FAQ from './pages/Faq';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           {/* Ensure the path '/login' is correct and matches the URL */}
           <Route path="/login" element={<Login />} />
           <Route path="/reviews" element={<ReviewPage />} />
+          <Route path="/Faq" element={<FAQ />} />
         </Routes>
       </Layout>
     </Router>
