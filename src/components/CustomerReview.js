@@ -8,5 +8,5 @@ const CustomerReview = ({ name, review }) => {
     </div>
   );
 };
-
+//testing folders
 export default CustomerReview;
