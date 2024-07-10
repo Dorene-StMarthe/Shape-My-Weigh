@@ -10,7 +10,9 @@ const NavigationBar = () => {
   return (
     <nav className="bg-white p-4 flex justify-between items-center">
       <div className="flex items-center">
-        <img src="./logo.png" alt="Logo" className="h-16 mr-4" />
+        <a href="/">
+          <img src="./logo.png" alt="Logo" className="h-16 mr-4" />
+        </a>
       </div>
       <div className="flex justify-center items-center">
         <a href="/faq" className="text-lg relative mr-8 hover:text-midnight hover:font-bold transition-colors duration-300 ease-in-out">
@@ -41,4 +43,6 @@ const NavigationBar = () => {
 };
 
 export default NavigationBar;
+
+
 
