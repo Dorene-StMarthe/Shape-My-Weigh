@@ -10,7 +10,7 @@ Welcome to Shape My Weigh, the ultimate fitness app designed for fitness enthusi
 
 - View and Manage Your Workouts: Easily view your created workout plans and track your progress as you work towards your fitness targets.
 
-- Edit and Delete Workouts: Modify your workout plans on the go. Need to adjust the intensity or switch up exercises? No problem. Fitness Buddy allows you to edit and delete workouts with ease.
+- Edit and Delete Workouts: Modify your workout plans on the go. Need to adjust the intensity or switch up exercises? No problem. Shape My Weigh allows you to edit and delete workouts with ease.
 
 ## How to Use:
 Creating a Workout Plan:
